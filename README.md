@@ -18,5 +18,5 @@ Se trata de uma landing page com formulário para preenchimento de candidatura, 
     {endereco}/doc
 
 <img src="https://github.com/cinthya-morales/banco_de_curriculo/blob/main/public/images/doc_swagger.png?raw=true" width="50%">
-<img src="https://github.com/cinthya-morales/banco_de_curriculo/blob/main/public/images/candidato_model.png" width="50%">
+<img src="https://github.com/cinthya-morales/banco_de_curriculo/blob/main/public/images/candidato_model.png?raw=true" width="50%">
 
