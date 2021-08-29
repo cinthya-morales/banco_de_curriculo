@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="stylesheets/materialize.min.css">
+    <script src="javascripts/materialize.min.js"></script>
+    <script src="javascripts/must.js"></script>
+    <link type="text/css" rel="stylesheet" href="stylesheets/form.css">
+    <title>Curriculo JobsNET</title>
+</head>
+
+<body class="background-gradient">
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">JobsNET</a>
+        </div>
+    </nav>
+    <div class="container background-container">
+        <div class="row">
+            <div class="col s12 center-align">
+                <h5>Cadastre seu Curriculo</h5>
+                <hr>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h6>DADOS PESSOAIS</h6>
+            </div>
+        </div>
+        <div class="row">
+            <form class="col s12" action="/candidatos/" method="POST">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="nome" name="nome" type="text" class="validate" maxlength="100">
+                        <label for="nome">Nome completo</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="cargo" name="cargo" type="text" class="validate" maxlength="30">
+                        <label for="cargo">Cargo pretendido</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s4">
+                        <input id="nascimento" name="nascimento" type="date" class="validate" maxlength="10">
+                        <label for="nascimento">Data de Nascimento</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <select name="estado_civil" id="estado_civil">
+                            <option value="" selected>Escolha uma opção</option>
+                            <option value="casado">Casado</option>
+                            <option value="solteiro">Solteiro</option>
+                            <option value="viuvo">Viúvo</option>
+                            <option value="divorciado">Divorciado</option>
+                        </select>
+                        <label>Estado Civil</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <select name="sexo" id="sexo">
+                            <option value="" selected>Escolha uma opção</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="nao_informado">Prefiro não informar</option>
+                        </select>
+                        <label>Sexo</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s4">
+                        <input id="cep" name="cep" type="text" class="validate" maxlength="10">
+                        <label for="cep">CEP</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input id="bairro" name="bairro" type="text" class="validate" maxlength="50">
+                        <label for="bairro">Bairro</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input id="cidade" name="cidade" type="text" class="validate" maxlength="50">
+                        <label for="cidade">Cidade</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s8">
+                        <input id="endereco" name="endereco" type="text" class="validate" maxlength="100">
+                        <label for="endereco">Endereço</label>
+                    </div>
+                    <div class="input-field col s4">
+                        <input id="numero" name="numero_casa" type="text" class="validate" maxlength="10">
+                        <label for="numero">Número</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="telefone" name="telefone" type="text" class="validate" maxlength="20">
+                        <label for="telefone">Telefone</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="celular" name="celular" type="text" class="validate" maxlength="15">
+                        <label for="celular">Celular</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" name="email" type="email" class="validate" maxlength="100">
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <h6>DOCUMENTOS</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="rg" name="rg" type="text" class="validate" maxlength="15">
+                        <label for="rg">Identidade</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="cpf" name="cpf" type="text" class="validate" maxlength="11">
+                        <label for="cpf">CPF</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <select name="tem_cnh" id="habilitacao">
+                            <option value="" selected>Escolha uma opção</option>
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
+                        <label>Habilitação</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <select name="tem_veiculo" id="veiculo">
+                            <option value="" selected>Escolha uma opção</option>
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
+                        <label>Possui Veículo</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s1 offset-s10">
+                        <button class="btn waves-effect waves-light" type="submit" name="action">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="page-footer">
+    <div class="footer-copyright">
+        <div class="container">
+        © 2021 Cinthya Morales
+        </div>
+      </div>
+    </footer>
+</body>
+
+</html>
